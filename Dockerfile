@@ -11,5 +11,8 @@ COPY ./package.json ./
 RUN npm install
 COPY ./ ./
 
+#expose port
+EXPOSE 5000
+
 #set default command
 CMD ["npm", "start"]
